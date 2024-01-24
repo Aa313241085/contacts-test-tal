@@ -9,4 +9,3 @@ def add_contacts():
             phone=Faker(locale="he_IL").phone_number()
             cur.execute(f"INSERT INTO contacts (name, phone, email, address) VALUES ('{profile['name']}', '{phone}', '{profile['mail']}', '{profile['address']}')")
 
-add_contacts()
